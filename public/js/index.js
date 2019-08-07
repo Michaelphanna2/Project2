@@ -5,6 +5,10 @@ var $submitBtn = $("#submit");
 var $exampleList = $("#example-list");
 
 // The API object contains methods for each kind of request we'll make
+// Verify the username and password exists in the User database
+// if username and password exist and match redirect to home.html
+// else inform the user that the username and password do not match and do not redirect them.
+// save the user information to client side storage (cookies?) to then be retrieved by the home.html to populate the user data
 var API = {
   saveExample: function(example) {
     return $.ajax({
@@ -29,6 +33,8 @@ var API = {
     });
   }
 };
+
+// submit signup data from account.html
 
 // refreshExamples gets new examples from the db and repopulates the list
 var refreshExamples = function() {
