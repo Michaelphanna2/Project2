@@ -32,8 +32,8 @@ module.exports = function(app) {
 
 // Dependencies
 // =============================================================
-var path = require("pa");
-th
+var path = require("path");
+
 // Routes
 // =============================================================
 module.exports = function(app) {

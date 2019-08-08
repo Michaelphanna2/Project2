@@ -1,5 +1,4 @@
-DROP DATABASE IF EXISTS exampledb;
-CREATE DATABASE exampledb;
+DROP DATABASE IF EXISTS passwordVault_db;
+CREATE DATABASE passwordVault_db;
 
-DROP DATABASE IF EXISTS testdb;
-CREATE DATABASE testdb;
+
