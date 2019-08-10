@@ -16,12 +16,12 @@ module.exports = function(sequelize, DataTypes) {
       validate: {
         len: [8]
       }
-  },
-  userId: {
-    type: DataTypes.INTEGER,
-    allowNull: false,
-  }});
+    },
+    userId: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    }
+  });
   return Authenticate;
 };
-
 
