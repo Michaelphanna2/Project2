@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "Shift217!!",
-    "database": "passwordVault_DB",
+    "password": null,
+    "database": "passwordVault_db",
     "host": "localhost",
     "dialect": "mysql",
     "port": 3306
@@ -19,5 +19,4 @@
     "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"
   }
-  
 }

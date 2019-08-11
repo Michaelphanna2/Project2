@@ -1,3 +1,7 @@
+//HTML routes are part of server.js that delivers HTML pages to the browser
+//The is part of the view
+//User request are routed into the controller  
+
 var db = require("../models");
 
 module.exports = function(app) {
