@@ -3,18 +3,18 @@
 
 module.exports = function(sequelize, DataTypes) {
   var Authenticate = sequelize.define("Authenticate", {
-    username: {
+    pVusername: {
       type: DataTypes.TEXT,
       allowNull: false,
       validate: {
         len: [1]
       }
     },
-    password: {
+    pVpassword: {
       type: DataTypes.TEXT,
       allowNull: false,
       validate: {
-        len: [8]
+        len: [6]
       }
   },
   userId: {

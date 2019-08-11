@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": null,
-    "database": "PasswordVault",
+    "database": "passwordVault_db",
     "host": "localhost",
     "dialect": "mysql",
     "port": 3306

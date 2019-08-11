@@ -1,3 +1,9 @@
+//Api routes are part of the controller (brain)
+//Controller takes user commands and sends them to the model 
+//these routes must talk to the ORM (think that is the app)
+//This is where ???? These GET / POST 
+
+
 var db = require("../models");
 
 module.exports = function(app) {
@@ -22,3 +28,5 @@ module.exports = function(app) {
     });
   });
 };
+
+//app.get("api/)
