@@ -7,13 +7,13 @@ var $submitBtn = $("#submit");
 var $exampleList = $("#example-list");
 
 // The API object contains methods for each kind of request we'll make
-    // populate the page with the applicable userData information
-    // create new service/password combinations and add them to the database
-    // delete existing service/password combinations from the database
-    // update existing service/password combinations on the database
-    // generate error messages if one of the new service/password fields are empty 
-    // generate a random password using the generate-password module
-    // sign out and return to index.html
+// populate the page with the applicable userData information
+// create new service/password combinations and add them to the database
+// delete existing service/password combinations from the database
+// update existing service/password combinations on the database
+// generate error messages if one of the new service/password fields are empty
+// generate a random password using the generate-password module
+// sign out and return to index.html
 var API = {
   saveExample: function(example) {
     return $.ajax({
