@@ -1,6 +1,7 @@
 // Get references to page elements
+
 var $exampleText = $("#example-text");
-var $exampleDescription = $("#example-description");
+var $exampleDescription = $("#passInput");
 var $submitBtn = $("#submit");
 var $exampleList = $("#example-list");
 
@@ -31,4 +32,3 @@ var API = {
     });
   }
 };
-

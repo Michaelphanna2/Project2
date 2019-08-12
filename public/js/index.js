@@ -1,11 +1,12 @@
 // Get references to page elements
-var $exampleText = $("#example-text");
-var $exampleDescription = $("#example-description");
-var $submitBtn = $("#submit");
-var $exampleList = $("#example-list");
+
+var $userInput = $("#usernameInput");
+var $passInput = $("#passInput");
+var $authBtn = $("#authBtn");
 
 // The API object contains methods for each kind of request we'll make
 // Verify the username and password exists in the User database
+
 // if username and password exist and match redirect to home.html
 // else inform the user that the username and password do not match and do not redirect them.
 // save the user information to client side storage (cookies?) to then be retrieved by the home.html to populate the user data

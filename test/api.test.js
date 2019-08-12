@@ -9,6 +9,7 @@ chai.use(chaiHttp);
 
 var request;
 
+
 describe("GET /api/examples", function() {
   // Before each test begins, create a new request server for testing
   // & delete all examples from the db
@@ -40,11 +41,17 @@ describe("GET /api/examples", function() {
 
         expect(responseBody[0])
           .to.be.an("object")
-          .that.includes({ text: "First Example", description: "First Description" });
+          .that.includes({
+            text: "First Example",
+            description: "First Description"
+          });
 
         expect(responseBody[1])
           .to.be.an("object")
-          .that.includes({ text: "Second Example", description: "Second Description" });
+          .that.includes({
+            text: "Second Example",
+            description: "Second Description"
+          });
 
         // The `done` function is used to end any asynchronous tests
         done();
