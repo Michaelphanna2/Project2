@@ -19,9 +19,5 @@
     "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"
   }
-<<<<<<< HEAD
   
 }
-=======
-}
->>>>>>> 503c68b... merge back_end branch
