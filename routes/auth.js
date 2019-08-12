@@ -6,6 +6,10 @@ module.exports = function(app) {
 
   app.get("/account", authController.account);
 
+  app.get("/home", authController.home);
+
+  app.get("/logout", isLoggedIn, authController.logout);
+
   app.post(
     "/account",
     passport.authenticate("local-signup", {
@@ -14,4 +18,9 @@ module.exports = function(app) {
       failureRedirect: "/account"
     })
   );
+  function isLoggedIn(req, res, next) {
+    if (req.isAuthenticated()) return next();
+
+    res.redirect("/");
+  }
 };
