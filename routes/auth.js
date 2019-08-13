@@ -15,6 +15,13 @@ module.exports = function(app, passport, authController) {
       failureRedirect: "/account"
     })
   );
+  app.post(
+    "/signin",
+    passport.authenticate("local-signin", {
+      successRedirect: "/home",
+      failureRedirect: "/"
+    })
+  );
   function isLoggedIn(req, res, next) {
     if (req.isAuthenticated()) return next();
 
