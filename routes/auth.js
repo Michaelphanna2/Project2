@@ -8,7 +8,7 @@ module.exports = function(app, passport, authController) {
   app.get("/logout", isLoggedIn, authController.logout);
 
   app.post(
-    "/account",
+    "/signup",
     passport.authenticate("local-signup", {
       successRedirect: "/home",
 
@@ -20,5 +20,4 @@ module.exports = function(app, passport, authController) {
 
     res.redirect("/");
   }
-  app.post("/signup", authController.signup);
 };
