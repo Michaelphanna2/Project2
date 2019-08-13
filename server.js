@@ -46,13 +46,13 @@
 
 // module.exports = app;
 
+require("dotenv").config();
 var express = require("express");
 var app = express();
 var passport = require("passport");
 var session = require("express-session");
-require("dotenv").config();
 var exphbs = require("express-handlebars");
-
+var AuthController = require("./controllers/authcontroller");
 app.use(
   express.urlencoded({
     extended: true
@@ -83,10 +83,15 @@ app.set("view engine", ".hbs");
 
 //Models
 var models = require("./models");
-
+var authController = new AuthController(models);
 //Routes
 
-var authRoute = require("./routes/auth.js")(app, passport);
+var authRoute = require("./routes/auth.js")(
+  app,
+  passport,
+  authController,
+  models
+);
 
 //load passport strategies
 

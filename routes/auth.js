@@ -1,7 +1,4 @@
-var authController = require("../controllers/authcontroller.js");
-var passport = require("passport");
-
-module.exports = function(app) {
+module.exports = function(app, passport, authController) {
   app.get("/", authController.signin);
 
   app.get("/account", authController.account);
@@ -23,4 +20,5 @@ module.exports = function(app) {
 
     res.redirect("/");
   }
+  app.post("/signup", authController.signup);
 };
