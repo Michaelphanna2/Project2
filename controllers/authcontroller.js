@@ -17,7 +17,7 @@ var AuthController = function(models) {
   this.signup = function(req, res) {
     console.log(req.body);
     models.User.create(req.body).then(function(user) {
-      res.json(user);
+      res.redirect("home");
     });
   };
 };
