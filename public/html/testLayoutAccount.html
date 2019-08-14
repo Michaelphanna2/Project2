@@ -10,7 +10,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../styles/styles.css" type="text/css" />
     <title>Account Creation</title>
   </head>
   <body>
@@ -18,9 +18,10 @@
         <form>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-4">Create new account</h1>
+                <h1 class="display-4">PasswordVault Account Creation</h1>
+                <img src="../images/padlock1.png" id="padlock" alt="padlock">
                 <p class="lead">
-                Below you can create your new account for password manager.
+                Below you can create your new account for PasswordVault.
                 </p>
             </div>
         <div class="form-group">
@@ -57,6 +58,8 @@
         <button type="submit" class="btn btn-primary" id="createSubmit">
             Submit
         </button>
+        <br><br>
+        <small id="PwGeneratorDisclaimer" class="form-text text-muted">Need help coming up with a secure password? <a href="passwordGenerator.html" target="_blank">Click here</a> to access our password generator! We'll never have access to see the passwords created.</small>
         </form>
     </div>
   </body>
