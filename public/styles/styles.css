@@ -1,7 +1,63 @@
-.list-group-item {
+/*.list-group-item {
   line-height: 2.5;
 }
 #container {
   width: 80%;
   margin: auto;
+} */
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+
+.list-group-item {
+    line-height: 2.5;
+  }
+  .jumbotron {
+    background-color: lightblue;
+    color: white;
+    width: 80%;
+    margin: auto;
+    font-family: kanit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 120px;
+    border-radius: 25px;
+    padding: 20px;
+    }
+
+#padlock {
+    height: 70px;
+    width: 70px;
+    overflow: hidden;
+}
+
+.overallForm {
+    float: left;
+}
+
+#cryptex {
+    height: 150px;
+    width: 250px;
+
+}
+
+body {
+    color: lightblue;
+    font-family: kanit;
+    background-image: url(../images/backgroundgrey.jpg);
+}
+
+.form-group {
+    width: 550px;
+    padding-left: 20px;
+}
+
+.card {
+    width: 550px;
+}
+
+#createSubmit {
+  padding-left: 20px;
 }
