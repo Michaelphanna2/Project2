@@ -5,6 +5,8 @@ module.exports = function(app, passport, authController) {
 
   app.get("/home", authController.home);
 
+  app.get("/pwGen", authController.pwGen);
+
   app.get("/logout", isLoggedIn, authController.logout);
 
   app.post(

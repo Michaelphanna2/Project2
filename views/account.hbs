@@ -1,25 +1,31 @@
 <body>
     <div id="container">
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4">Create new account</h1>
-                <p class="lead">
-                    Below you can create your new account for password manager.
-                </p>
-            </div>
-
-            <form id="signup" name="signup" method="post" action="/signup">
-                <label for="email">Email Address</label>
-                <input class="text" name="email" type="email" />
-                <label for="firstname">Firstname</label>
-                <input name="firstname" type="text" />
-                <label for="lastname">Lastname</label>
-                <input name="lastname" type="text" />
-                <label for="password">Password</label>
-                <input name="password" type="password" />
-                <input class="btn" type="submit" value="Sign Up" />
-            </form>
-        </div>
+        <form>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">PasswordVault Account Creation</h1>
+                    <img src="../images/padlock1.png" id="padlock" alt="padlock">
+                    <p class="lead">
+                        Below you can create your new account for PasswordVault.
+                    </p>
+                </div>
+                <form id="signup" name="signup" method="post" action="/signup">
+                    <label for="email">Email Address</label>
+                    <input class="text" name="email" type="email" />
+                    <label for="firstname">Firstname</label>
+                    <input name="firstname" type="text" />
+                    <label for="lastname">Lastname</label>
+                    <input name="lastname" type="text" />
+                    <label for="password">Password</label>
+                    <input name="password" type="password" />
+                    <input class="btn" type="submit" value="Sign Up" />
+                </form>
+                <br><br>
+                <small id="PwGeneratorDisclaimer" class="form-text text-muted">Need help coming up with a secure
+                    password? <a href="/pwgen" target="_blank">Click here</a> to access our password
+                    generator! We'll never have access to see the passwords created.</small>
+        </form>
+    </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
