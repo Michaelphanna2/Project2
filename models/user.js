@@ -2,7 +2,7 @@
 //User table will need to store the username and the password in the usertable for autentication
 
 module.exports = function(sequelize, Sequelize) {
-  var User = sequelize.define("User", {
+  var User = sequelize.define("user", {
     id: {
       autoIncrement: true,
       primaryKey: true,

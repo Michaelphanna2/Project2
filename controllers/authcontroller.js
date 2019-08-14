@@ -14,12 +14,6 @@ var AuthController = function(models) {
       res.redirect("/");
     });
   };
-  this.signup = function(req, res) {
-    console.log(req.body);
-    models.User.create(req.body).then(function(user) {
-      res.redirect("home");
-    });
-  };
 };
 
 module.exports = AuthController;
