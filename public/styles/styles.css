@@ -10,6 +10,10 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+  body {
+    width: 80%;
+    margin: auto;
+  }
 
 .list-group-item {
     line-height: 2.5;
@@ -17,8 +21,6 @@
   .jumbotron {
     background-color: lightblue;
     color: white;
-    width: 80%;
-    margin: auto;
     font-family: kanit;
     background-size: cover;
     background-repeat: no-repeat;

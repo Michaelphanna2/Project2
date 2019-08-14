@@ -8,6 +8,9 @@ var AuthController = function(models) {
   this.home = function(req, res) {
     res.render("home");
   };
+  this.pwGen = function(req, res) {
+    res.render("pwgen");
+  };
   this.logout = function(req, res) {
     req.session.destroy(function(err) {
       if (err) throw err;
